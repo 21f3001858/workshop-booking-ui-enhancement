@@ -1,0 +1,73 @@
+.auth {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 72vh;
+}
+
+.auth__box {
+  width: 100%;
+  max-width: 410px;
+  padding: 40px 30px 36px;
+}
+
+.auth__lock-icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: rgba(99,102,241,0.1);
+  color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.auth__head {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.auth__head h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.auth__head p {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.auth__pw-box {
+  position: relative;
+}
+.auth__pw-box .field {
+  padding-right: 42px;
+}
+.auth__pw-eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-faint);
+  padding: 2px;
+}
+.auth__pw-eye:hover { color: var(--text-dim); }
+
+.auth__cta {
+  width: 100%;
+  margin-top: 20px;
+  padding: 13px;
+}
+
+.auth__toggle {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 0.83rem;
+  color: var(--text-dim);
+}
+.auth__toggle button {
+  color: var(--accent-light);
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .auth__box { padding: 28px 20px 24px; }
+}
